@@ -7,6 +7,7 @@ body.about-page {
     background-image: url('../images/background-main.jpg');
     background-size: cover;
     background-position: center top;
+    background-repeat: no-repeat;
 }
 html {
     height: 100%
@@ -57,6 +58,12 @@ ul {
 li {
   margin-bottom: .25em;
 }
+
+/*
+TODO: move this header style down to the media queries for desktop. Replace default styles to be mobile styles that just
+stack each menu item on top of each other, do not make them fixed in position.
+*/
+
 header {
   position: fixed;
   top: 0;
@@ -140,7 +147,7 @@ a,
 }
 .last {
   font-weight: 300;
-  margin-left: .5em;
+  margin-left: -0.1em;
 }
 .description {
   font-weight: 300;
@@ -203,34 +210,58 @@ a,
   margin-left: 30px;
 }
 .about {
+  padding-top: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
-.container {
-  display: block;
-  margin: 10% auto 0 auto;
-  width: 90%;
-  color: white;
+.about .container {
+  flex-grow: 1;
+  width: 50%;
+  max-width: 600px;
   background-color: rgba(0, 0, 0, 0.25);
 }
-.item {
-  text-align: left;
-  float: left;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
+.about .text {
+  padding: 2em;
 }
-.text {
-  width: 80%;
+.about .contact {
+  padding: 4em;
 }
-.text p {
+.contact h5 {
+  margin-bottom: 1em;
+}
+.contact .value {
+  text-transform: uppercase;
+  padding: .5em 0;
+  font-weight: 100;
+}
+.contact .icons {
+  margin-top: .5em;
+  font-size: 2em;
+}
+.text h5 {
+  margin-bottom: .5em;
+}
+.about .image {
+  flex-grow: 1;
+}
+.about label {
+  margin-right: .5em;
+  font-weight: bold;
+}
+.about label,
+.about span,
+.about p,
+.about h5 {
   color: white;
 }
-.image {
-  width: 20%;
-}
 .image img {
+  display: block;
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 100%;
 }

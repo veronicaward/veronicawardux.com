@@ -1,0 +1,272 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body.about-page {
+    background-image: url('../images/background-main.jpg');
+    background-size: cover;
+    background-position: center top;
+}
+html {
+    height: 100%
+}
+.selected-color {
+  color: rgba(133, 220, 217, 1.0);
+}
+body {
+  /*font-family: Lato, sans-serif;*/
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: Raleway, sans-serif;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+}
+h1 {
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+h2,
+h3 {
+  font-weight: 700;
+}
+h2 {
+  font-size: 32px;
+  line-height: 56px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+p {
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 300;
+  line-height: 26px;
+}
+ul {
+  list-style-type: disc;
+  margin-left: 1em;
+}
+li {
+  margin-bottom: .25em;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  width: 100%;
+  height: 4.5em;
+  clear: both;
+  z-index: 100;
+}
+nav,
+.header-title {
+  margin-top: 1.6em;
+}
+.header-title {
+  float: left;
+  margin-left: 1em;
+}
+nav {
+  float: right;
+  margin-right: 1em;
+}
+nav a,
+.button {
+  font-weight: bold;
+}
+nav a {
+  margin: 0 1.5em;
+  font-weight: 300;
+}
+a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: rgba(133, 220, 217, 1.0);
+}
+.hero,
+.app {
+  padding: 10em 0em;
+  background-size: cover;
+}
+.section {
+  text-align: center;
+  clear: both;
+}
+.hero {
+  background-image: url('../images/background-main.jpg');
+  background-position: bottom;
+}
+.home-harvest {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../images/hh-link.jpg');
+}
+a,
+.name,
+.description,
+.header-title {
+  text-transform: uppercase;
+  color: white;
+}
+.button {
+  font-weight: 300;
+  color: white;
+  border: 2px solid white;
+  padding: .5em 1em;
+  width: 185px;
+  transition: color 0.3s ease, border 0.3s ease;
+}
+.button:hover {
+  color: rgba(133, 220, 217, 1.0);
+  border: 2px solid rgba(133, 220, 217, 1.0);
+}
+.view {
+  display: inline-block;
+  margin-top: 2em;
+  color: white;
+}
+.name,
+.first {
+  font-weight: bold;
+}
+.last {
+  font-weight: 300;
+  margin-left: .5em;
+}
+.description {
+  font-weight: 300;
+}
+.main-image {
+  padding: 0;
+}
+.main-image img {
+  width: 100%;
+}
+.details p {
+  margin-bottom: 0.5em;
+}
+.blurb {
+  text-align: left;
+  padding: 2em 2em 3em 2em;
+}
+.blurb p {
+  margin: 1em 0;
+}
+.blurb img {
+  width: 100%;
+  margin: -2px 0;
+}
+.blurb ul {
+  margin: 1em 0 1em 1em;
+}
+.blurb .title {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 2em;
+}
+.blurb .title > span {
+  font-size: 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+.blurb.main-description .title > span {
+  font-size: 1.5em;
+}
+.blurb .title > span:before,
+.blurb .title > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 2px;
+  background: rgba(0, 0, 0, 0.06);
+}
+.blurb .title > span:before {
+  right: 100%;
+  margin-right: 30px;
+}
+.blurb .title > span:after {
+  left: 100%;
+  margin-left: 30px;
+}
+.about {
+}
+.container {
+  display: block;
+  margin: 10% auto 0 auto;
+  width: 90%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.item {
+  text-align: left;
+  float: left;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.text {
+  width: 80%;
+}
+.text p {
+  color: white;
+}
+.image {
+  width: 20%;
+}
+.image img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.group {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+@media (min-width: 60em) {
+  .hero,
+  .app {
+     padding: 16.2em 0;
+  }
+
+  .main-description .challenge {
+    width: 80%;
+  }
+
+  .main-description .details {
+    width: 20%;
+  }
+
+  .main-description .details,
+  .main-description .challenge {
+    float: left;
+    text-align: left;
+  }
+
+  .blurb {
+    padding: 2em 5em 3em 5em;
+  }
+}

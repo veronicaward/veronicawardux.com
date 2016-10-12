@@ -114,9 +114,6 @@ a:hover {
   background-image: url('../images/background-main.jpg');
   background-position: bottom;
 }
-.home-harvest {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url('../images/hh-link.jpg');
-}
 a,
 .name,
 .description,
@@ -282,26 +279,115 @@ a,
 .dot {
   font-weight: 600;
 }
+.row,
+.more-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  flex-direction: column;
+}
+.project {
+  position: relative;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.project img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.project img[class] {
+  width: 150px;
+}
+.project .project-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.project:hover .project-info {
+  display: flex;
+}
+.project-info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-harvest .project-info {
+  background-color: rgba(15, 163, 177, 0.65);
+}
+.area-51 .project-info {
+  background-color: rgba(237, 222, 164, 0.65);
+}
+.lowebot .project-info {
+  background-color: rgba(181,226,250, 0.65);
+}
+.fourth-project .project-info {
+  background-color: rgba(247,160,114, 0.65);
+}
+.more-work a {
+  display: inline-block;
+  margin: auto .5em;
+}
+@media (min-width: 40em) {
+  .row {
+    flex-direction: row;
+  }
+  .project {
+    width: 50%;
+  }
+  .project h1 {
+    font-size: 32px;
+  }
+  .project .project-info {
+    display: none;
+  }
+
+  .home-harvest .project-info,
+  .area-51 .project-info,
+  .lowebot .project-info,
+  .fourth-project .project-info {
+    background-color: inherit;
+  }
+
+  .home-harvest:hover .project-info {
+    background-color: rgba(15, 163, 177, 0.65);
+  }
+  .area-51:hover .project-info {
+    background-color: rgba(237, 222, 164, 0.65);
+  }
+  .lowebot:hover .project-info {
+    background-color: rgba(181,226,250, 0.65);
+  }
+  .fourth-project:hover .project-info {
+    background-color: rgba(247,160,114, 0.65);
+  }
+}
+@media (min-width: 50em) {
+  .project h1 {
+    font-size: 48px;
+  }
+}
 @media (min-width: 60em) {
   .hero,
   .app {
      padding: 16.2em 0;
   }
-
   .main-description .challenge {
     width: 80%;
   }
-
   .main-description .details {
     width: 20%;
   }
-
   .main-description .details,
   .main-description .challenge {
     float: left;
     text-align: left;
   }
-
   .blurb {
     padding: 2em 5em 3em 5em;
   }

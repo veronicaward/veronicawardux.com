@@ -165,6 +165,11 @@ a,
 .blurb p {
   margin: 1em 0;
 }
+.blurb a,
+.blurb a:visited {
+  color: rgba(133, 220, 217, 1.0);
+  text-decoration: underline;
+}
 .blurb img {
   width: 100%;
   margin: -2px 0;
@@ -298,6 +303,7 @@ a,
   object-fit: cover;
   width: 100%;
   height: 100%;
+  display: block;
 }
 .project img[class] {
   width: 150px;
@@ -318,16 +324,16 @@ a,
   height: 100%;
 }
 .home-harvest .project-info {
-  background-color: rgba(15, 163, 177, 0.65);
+  background-color: rgba(50, 150, 120, 0.75);
 }
 .area-51 .project-info {
-  background-color: rgba(237, 222, 164, 0.65);
+  background-color: rgba(220, 100, 90, 0.75);
 }
 .lowebot .project-info {
-  background-color: rgba(181,226,250, 0.65);
+  background-color: rgba(40, 74, 141, 0.75);
 }
-.fourth-project .project-info {
-  background-color: rgba(247,160,114, 0.65);
+.quiz-quarrel .project-info {
+  background-color: rgba(92, 92, 92, 0.75);
 }
 .more-work a {
   display: inline-block;
@@ -350,26 +356,26 @@ a,
   .home-harvest .project-info,
   .area-51 .project-info,
   .lowebot .project-info,
-  .fourth-project .project-info {
+  .quiz-quarrel .project-info {
     background-color: inherit;
   }
 
   .home-harvest:hover .project-info {
-    background-color: rgba(15, 163, 177, 0.65);
+    background-color: rgba(50, 150, 120, 0.75);
   }
   .area-51:hover .project-info {
-    background-color: rgba(237, 222, 164, 0.65);
+    background-color: rgba(220, 100, 90, 0.75);
   }
   .lowebot:hover .project-info {
-    background-color: rgba(181,226,250, 0.65);
+    background-color: rgba(40, 74, 141, 0.75);
   }
-  .fourth-project:hover .project-info {
-    background-color: rgba(247,160,114, 0.65);
+  .quiz-quarrel:hover .project-info {
+    background-color: rgba(137, 103, 92, 0.75);
   }
 }
 @media (min-width: 50em) {
   .project h1 {
-    font-size: 48px;
+    font-size: 36px;
   }
 }
 @media (min-width: 60em) {

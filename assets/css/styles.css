@@ -171,6 +171,7 @@ a,
   text-decoration: underline;
 }
 .blurb img {
+  display: block;
   width: 100%;
   margin: -2px 0;
 }
@@ -289,9 +290,10 @@ a,
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.row {
   flex-direction: column;
+}
+.more-work a {
+  width: 100%;
 }
 .project {
   position: relative;
@@ -340,8 +342,12 @@ a,
   margin: auto .5em;
 }
 @media (min-width: 40em) {
-  .row {
+  .row,
+  .more-work {
     flex-direction: row;
+  }
+  .more-work a {
+    width: 33.333%;
   }
   .project {
     width: 50%;

@@ -58,33 +58,29 @@ ul {
 li {
   margin-bottom: .25em;
 }
-
-/*
-TODO: move this header style down to the media queries for desktop. Replace default styles to be mobile styles that just
-stack each menu item on top of each other, do not make them fixed in position.
-*/
-
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.45);
-  width: 100%;
-  height: 4.5em;
-  clear: both;
-  z-index: 100;
-}
-nav,
-.header-title {
-  margin-top: 1.6em;
-}
-.header-title {
-  float: left;
-  margin-left: 1em;
+  padding: 1em;
+  position: relative;
+  background-color: black;
+  text-align: center;
 }
 nav {
-  float: right;
-  margin-right: 1em;
+  margin: 1.5em 0;
+}
+nav a {
+  display: block;
+  font-size: 1.25em;
+  margin: 1em 0;
+}
+.header-title {
+  text-align: center;
+}
+.header-title a {
+  font-size: 2.5em;
+}
+nav .button {
+  border: none;
+  padding: none;
 }
 nav a,
 .button {
@@ -346,6 +342,51 @@ a,
   background-color: rgba(92, 92, 92, 0.75);
 }
 @media (min-width: 40em) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    width: 100%;
+    height: 4.5em;
+    clear: both;
+    z-index: 100;
+  }
+  header {
+    padding: 0;
+  }
+  nav {
+    margin-top: 1em;
+  }
+  .header-title {
+    margin-top: 1.6em;
+  }
+  .header-title {
+    float: left;
+    margin-left: 1em;
+  }
+  .header-title a {
+    font-size: 1em;
+  }
+  nav {
+    float: right;
+    margin-right: 1em;
+  }
+  nav a {
+    font-size: 1em;
+    display: inline-block;
+  }
+  .contact-button {
+    font-weight: 300;
+    color: white;
+    border: 2px solid white;
+    padding: .5em 1em;
+    transition: color 0.3s ease, border 0.3s ease;
+  }
+  .contact-button:hover {
+    color: rgba(133, 220, 217, 1.0);
+    border: 2px solid rgba(133, 220, 217, 1.0);
+  }
   .row,
   .more-work {
     flex-direction: row;
@@ -359,14 +400,12 @@ a,
   .project .project-info {
     display: none;
   }
-
   .home-harvest .project-info,
   .area-51 .project-info,
   .lowebot .project-info,
   .quiz-quarrel .project-info {
     background-color: inherit;
   }
-
   .home-harvest:hover .project-info {
     background-color: rgba(50, 150, 120, 0.75);
   }

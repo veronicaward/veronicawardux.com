@@ -3,12 +3,6 @@
   margin: 0;
   padding: 0;
 }
-body.about-page {
-    background-image: url('../images/background-main.jpg');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-}
 html {
     height: 100%
 }
@@ -215,51 +209,7 @@ a,
   margin: .5em;
 }
 .about {
-  padding-top: 8em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-}
-.about .container {
-  flex-grow: 1;
-  width: 50%;
-  max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.25);
-}
-.about .text {
-  padding: 2.5em;
-}
-.about.contact .container {
-  max-width: 500px;
-}
-.contact h5 {
-  margin-bottom: 1em;
-}
-.contact .value {
-  text-transform: uppercase;
-  margin: 1.5em 0;
-  font-weight: 100;
-}
-.contact .icons {
-  margin-top: .5em;
-  font-size: 2em;
-}
-.text h5 {
-  margin-bottom: .5em;
-}
-.about .image {
-  flex-grow: 1;
-}
-.about label {
-  margin-right: .5em;
-  font-weight: bold;
-}
-.about label,
-.about span,
-.about p,
-.about h5 {
-  color: white;
+  padding: 2em;
 }
 .image img {
   display: block;
@@ -341,7 +291,55 @@ a,
 .quiz-quarrel .project-info {
   background-color: rgba(92, 92, 92, 0.75);
 }
+.text h5 {
+  margin-bottom: .5em;
+}
+body.contact-page {
+    background-image: url('../images/background-main.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+.contact h5,
+.contact span,
+.contact label {
+  color: white;
+}
+.contact {
+  padding-top: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.contact .container {
+  flex-grow: 1;
+  width: 50%;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+.contact .text {
+  padding: 2.5em;
+}
+.contact h5 {
+  margin-bottom: 1em;
+}
+.contact .value {
+  text-transform: uppercase;
+  margin: 1.5em 0;
+  font-weight: 100;
+}
+.contact .icons {
+  margin-top: .5em;
+  font-size: 2em;
+}
 @media (min-width: 40em) {
+  body.about-page {
+      background-image: url('../images/background-main.jpg');
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+  }
   header {
     position: fixed;
     top: 0;
@@ -417,6 +415,41 @@ a,
   }
   .quiz-quarrel:hover .project-info {
     background-color: rgba(137, 103, 92, 0.75);
+  }
+  .about {
+    padding-top: 8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .about .container {
+    flex-grow: 1;
+    width: 50%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.25);
+  }
+  .about .text {
+    padding: 2.5em;
+  }
+  .about.contact .container {
+    max-width: 500px;
+  }
+  .contact {
+    padding-top: 8em;
+  }
+  .about .image {
+    flex-grow: 1;
+  }
+  .about label {
+    margin-right: .5em;
+    font-weight: bold;
+  }
+  .about label,
+  .about span,
+  .about p,
+  .about h5 {
+    color: white;
   }
 }
 @media (min-width: 50em) {

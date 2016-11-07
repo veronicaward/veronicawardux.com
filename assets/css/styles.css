@@ -85,10 +85,11 @@ nav a {
   font-weight: 300;
 }
 a {
+  color: rgba(133, 220, 217, 1.0);
   text-decoration: none;
   transition: color 0.3s ease;
 }
-a:hover {
+header a:hover {
   color: rgba(133, 220, 217, 1.0);
 }
 .app {
@@ -99,7 +100,7 @@ a:hover {
   text-align: center;
   clear: both;
 }
-a,
+header a,
 .name,
 .description,
 .header-title {
@@ -149,11 +150,6 @@ a,
 }
 .blurb p {
   margin: 1em 0;
-}
-.blurb a,
-.blurb a:visited {
-  color: rgba(133, 220, 217, 1.0);
-  text-decoration: underline;
 }
 .blurb img {
   display: block;
@@ -260,7 +256,7 @@ a,
   justify-content: center;
   flex-direction: column;
 }
-.project.small:hover .project-info {
+.project.require-hover:hover .project-info {
   display: flex;
 }
 .project-info {
@@ -409,7 +405,7 @@ body.contact-page {
   .project h1 {
     font-size: 32px;
   }
-  .project.small .project-info {
+  .project.require-hover .project-info {
     display: none;
   }
   .re-ally .project-info,

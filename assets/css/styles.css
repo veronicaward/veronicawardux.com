@@ -113,10 +113,10 @@ header a,
   border: 2px solid white;
   padding: .5em 1em;
   width: 185px;
-  transition: color 0.3s ease, border 0.3s ease;
+  transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease;
 }
 .button:hover {
-  color: rgba(133, 220, 217, 1.0);
+  background-color: rgba(133, 220, 217, 1.0);
   border: 2px solid rgba(133, 220, 217, 1.0);
 }
 .view {
@@ -358,7 +358,7 @@ ul.slick-dots {
   max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
-.main-image img {
+.main-carousel .main-image img {
   margin: 1.5em auto;
 }
 .nav-carousel {
@@ -386,7 +386,7 @@ ul.slick-dots {
   text-align: center;
 }
 .carousel-arrow .fa {
-  margin-top: 70px;
+  margin-top: 65px;
 }
 .main-carousel {
   margin-top: 2em;
@@ -437,10 +437,11 @@ ul.slick-dots {
     color: white;
     border: 2px solid white;
     padding: .5em 1em;
-    transition: color 0.3s ease, border 0.3s ease;
+    transition: color 0.3s ease, border 0.3s ease, background-color 0.3s ease;
   }
   .contact-button:hover {
-    color: rgba(133, 220, 217, 1.0);
+    color: white;
+    background-color: rgba(133, 220, 217, 1.0);
     border: 2px solid rgba(133, 220, 217, 1.0);
   }
   .row,

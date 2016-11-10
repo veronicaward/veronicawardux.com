@@ -530,6 +530,10 @@ body.about-page {
   .project h1 {
     font-size: 36px;
   }
+
+  .main-carousel .main-image img {
+    padding: 0 8em;
+  }
 }
 @media (min-width: 60em) {
   .app {

@@ -12,11 +12,13 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#ffffff">
   <title>Veronica Ward UX</title>
+
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
-  <!-- <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -56,7 +58,7 @@
         <li>
           Create a platform catered to renters
         </li>
-       
+
         <li>
           Establish a renter persona
         </li>
@@ -161,8 +163,8 @@
     </div>
 
     <p>
-     Upon agreeing on a design strategy with our stakeholder, we then put our design into a low fidelity prototype using Axure. Once we felt confident that enough information was included in our proto we then proceeded to test. We quickly discovered that users did not like to be overwhelmed with information on their dashboard, they wanted the top priority information only. 
-     We also discovered that users needed more visual cues to notice the amenities listed within the unit listings. 
+     Upon agreeing on a design strategy with our stakeholder, we then put our design into a low fidelity prototype using Axure. Once we felt confident that enough information was included in our proto we then proceeded to test. We quickly discovered that users did not like to be overwhelmed with information on their dashboard, they wanted the top priority information only.
+     We also discovered that users needed more visual cues to notice the amenities listed within the unit listings.
     </p>
 
     <div class="image-row">
@@ -180,38 +182,52 @@
   <div class="section blurb">
     <div class="title">
       <span>Final Iteration</span>
-      
-      <p>
-      </p>
+    </div>
+    <div class="nav-carousel-wrapper">
+      <div class="carousel-arrow prev">
+        <span class="fa fa-chevron-left"></span>
+      </div>
 
-      <div class="image-row">
-        <div class="image-item">
+      <div class="carousel-arrow next">
+        <span class="fa fa-chevron-right"></span>
+      </div>
+
+      <div class="nav-carousel">
+        <div class="nav-image">
           <img src="assets/images/re-ally-high-fi-1.jpg" />
         </div>
 
-        <div class="image-item">
+        <div class="nav-image">
           <img src="assets/images/re-ally-high-fi-2.jpg" />
         </div>
-      </div>
 
-      <p>
-      </p>
-      <p>
-      </p>
-
-      <div class="image-row">
-        <div class="image-item">
+        <div class="nav-image">
           <img src="assets/images/re-ally-high-fi-3.jpg" />
         </div>
 
-        <div class="image-item">
+        <div class="nav-image">
           <img src="assets/images/re-ally-high-fi-4.jpg" />
         </div>
       </div>
-
     </div>
-</div>
 
+    <div class="main-carousel">
+      <div class="main-image">
+        <img src="assets/images/re-ally-high-fi-1.jpg" />
+      </div>
+
+      <div class="main-image">
+        <img src="assets/images/re-ally-high-fi-2.jpg" />
+      </div>
+
+      <div class="main-image">
+        <img src="assets/images/re-ally-high-fi-3.jpg" />
+      </div>
+
+      <div class="main-image">
+        <img src="assets/images/re-ally-high-fi-4.jpg" />
+      </div>
+    </div>
   </div>
 
   <div class="section blurb">
@@ -219,23 +235,23 @@
       <span>Success Metrics</span>
     </div>
 
-    <p>
-      <ul>
+    <ul>
+      <li>
+        Track how many users click “Sign in with LinkedIn”
+      </li>
 
-        <li>
-          Track how many users click “Sign in with LinkedIn”
-        </li>
+      <li>
+        Track if users are taking advantage of applying to multiple units for free
+      </li>
 
-        <li>
-          Track if users are taking advantage of applying to multiple units for free
-        </li>
+      <li>
+        Track how many users fill out their social security number
+      </li>
 
-        <li>
-          Track the traffic from third party sites, which sites are generating the most activity to Re-Ally’s 
-        </li>
-
+      <li>
+        Track the traffic from third party sites, which sites are generating the most activity to Re-Ally’s
+      </li>
     </ul>
-    </p>
   </div>
 
   <div class="section blurb">
@@ -283,4 +299,43 @@
       </div>
     </div>
   </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.nav-carousel').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      dots: true,
+      infinite: true,
+      speed: 300,
+      focusOnSelect: true,
+      prevArrow: '.carousel-arrow.prev',
+      nextArrow: '.carousel-arrow.next',
+      asNavFor: '.main-carousel',
+      responsive: [{
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }]
+    });
+
+    $('.main-carousel').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false,
+      infinite: true,
+      speed: 300,
+      fade: true,
+      adaptiveHeight: true,
+      asNavFor: '.nav-carousel'
+    });
+  });
+</script>
 </body>

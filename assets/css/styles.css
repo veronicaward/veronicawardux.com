@@ -342,13 +342,55 @@ body.contact-page {
   width: 50%;
   padding: 0.5em;
 }
-
 .image-item-2 {
   flex: 1;
   width: 65%;
   padding: 0.5em;
 }
-
+ul.slick-dots {
+  bottom: inherit;
+  margin: 1em 0;
+}
+.nav-image img {
+  display: block;
+  margin: 0 auto;
+  width: 185px;
+  max-width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+.main-image img {
+  margin: 1.5em auto;
+}
+.nav-carousel {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-carousel-wrapper {
+  width: 100%;
+  position: relative;
+}
+.carousel-arrow.prev {
+  left: 0;
+}
+.carousel-arrow.next {
+  right: 0;
+}
+.carousel-arrow {
+  display: block;
+  position: absolute;
+  height: 145px;
+  width: 66px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  text-align: center;
+}
+.carousel-arrow .fa {
+  margin-top: 70px;
+}
+.main-carousel {
+  margin-top: 2em;
+}
 @media (min-width: 40em) {
   body.about-page {
       background-image: url('../images/background-main.jpg');

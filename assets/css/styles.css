@@ -202,6 +202,9 @@ header a,
 .about {
   padding: 2em;
 }
+.about p {
+  font-weight: 100;
+}
 .image img {
   display: block;
   margin: 0;
@@ -321,6 +324,7 @@ body.contact-page {
 .contact h5 {
   margin-bottom: 1em;
 }
+.about .value,
 .contact .value {
   text-transform: uppercase;
   margin: 1.5em 0;
@@ -514,10 +518,6 @@ body.about-page {
   }
   .about .image {
     flex-grow: 1;
-  }
-  .about label {
-    margin-right: .5em;
-    font-weight: bold;
   }
   .about label,
   .about span,

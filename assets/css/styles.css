@@ -269,6 +269,7 @@ header a,
   font-size: 1.3em;
   font-weight: 500;
 }
+.hero-color-wrapper,
 .hero .project-info {
   background-color: rgba(0, 120, 120, 0.75);
 }
@@ -390,6 +391,13 @@ ul.slick-dots {
 }
 .main-carousel {
   margin-top: 2em;
+}
+.hero-color-wrapper {
+  height: 100%;
+}
+body.contact-page,
+body.about-page {
+  height: 100%;
 }
 @media (min-width: 40em) {
   body.about-page {

@@ -336,15 +336,17 @@ body.contact-page {
 }
 
 .image-row {
+  position: relative;
   display: flex;
+  flex-flow: row wrap;
 }
 .image-row  img {
   width: 100%;
   max-width: 100%;
 }
+.image-item-4,
 .image-item {
-  flex: 1;
-  width: 50%;
+  flex-basis: 100%;
   padding: 0.5em;
 }
 .image-item-2 {
@@ -478,6 +480,9 @@ iframe {
     background-color: rgba(133, 220, 217, 1.0);
     border: 2px solid rgba(133, 220, 217, 1.0);
   }
+  .image-item-4 {
+    flex-basis: 50%;
+  }
   .row,
   .more-work {
     flex-direction: row;
@@ -557,6 +562,12 @@ iframe {
   }
   .nav-carousel-wrapper {
     display: block;
+  }
+  .image-item-4 {
+    flex-basis: 25%;
+  }
+  .image-item {
+    flex-basis: 50%;
   }
 }
 @media (min-width: 60em) {

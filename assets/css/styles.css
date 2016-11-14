@@ -363,6 +363,9 @@ ul.slick-dots {
   max-width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+img.no-border {
+  border: none;
+}
 .main-carousel .main-image img {
   margin: 1.5em auto;
 }
@@ -402,6 +405,10 @@ ul.slick-dots {
 body.contact-page,
 body.about-page {
   height: 100%;
+}
+iframe {
+  display: block;
+  margin: 0 auto;
 }
 @media (min-width: 40em) {
   body.about-page {
@@ -530,10 +537,6 @@ body.about-page {
   .project h1 {
     font-size: 36px;
   }
-
-  .main-carousel .main-image img {
-    padding: 0 8em;
-  }
 }
 @media (min-width: 60em) {
   .app {
@@ -552,5 +555,23 @@ body.about-page {
   }
   .blurb {
     padding: 2em 5em 3em 5em;
+  }
+}
+
+@media (min-width: 60em) {
+  .main-carousel .main-image img {
+    padding: 0 6em;
+  }
+}
+
+@media (min-width: 80em) {
+  .main-carousel .main-image img {
+    padding: 0 10em;
+  }
+}
+
+@media (min-width: 100em) {
+  .main-carousel .main-image img {
+    padding: 0 16em;
   }
 }

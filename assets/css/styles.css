@@ -376,6 +376,7 @@ img.no-border {
 .nav-carousel-wrapper {
   width: 100%;
   position: relative;
+  display: none;
 }
 .carousel-arrow.prev {
   left: 0;
@@ -532,10 +533,16 @@ iframe {
   .about h5 {
     color: white;
   }
+  .main-carousel.lowebot-carousel .main-image img {
+    padding: 0 12em;
+  }
 }
 @media (min-width: 50em) {
   .project h1 {
     font-size: 36px;
+  }
+  .nav-carousel-wrapper {
+    display: block;
   }
 }
 @media (min-width: 60em) {
@@ -562,16 +569,28 @@ iframe {
   .main-carousel .main-image img {
     padding: 0 6em;
   }
+
+  .main-carousel.lowebot-carousel .main-image img {
+    padding: 0 12em;
+  }
 }
 
 @media (min-width: 80em) {
   .main-carousel .main-image img {
     padding: 0 10em;
   }
+
+  .main-carousel.lowebot-carousel .main-image img {
+    padding: 0 16em;
+  }
 }
 
 @media (min-width: 100em) {
   .main-carousel .main-image img {
     padding: 0 16em;
+  }
+
+  .main-carousel.lowebot-carousel .main-image img {
+    padding: 0 20em;
   }
 }

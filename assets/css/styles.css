@@ -373,29 +373,43 @@ img.no-border {
   width: 100%;
   margin: 0 auto;
 }
-.nav-carousel-wrapper {
+.nav-carousel-wrapper,
+.main-carousel-wrapper {
   width: 100%;
   position: relative;
+}
+.nav-carousel-wrapper {
   display: none;
 }
-.carousel-arrow.prev {
+.carousel-arrow.prev,
+.main-carousel-arrow.prev {
   left: 0;
 }
-.carousel-arrow.next {
+.carousel-arrow.next,
+.main-carousel-arrow.next {
   right: 0;
 }
-.carousel-arrow {
+.carousel-arrow,
+.main-carousel-arrow {
   display: block;
   position: absolute;
-  height: 145px;
   width: 66px;
+  height: 145px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.15);
   z-index: 10;
   text-align: center;
 }
-.carousel-arrow .fa {
+.carousel-arrow .fa,
+.main-carousel-arrow .fa {
   margin-top: 65px;
+}
+.main-carousel-arrow {
+  top: 280px;
+}
+.main-carousel-arrow.lowebot-arrow {
+  top: 50%;
+  transform: translateY(-50%);
 }
 .main-carousel {
   margin-top: 2em;
@@ -567,11 +581,11 @@ iframe {
 
 @media (min-width: 60em) {
   .main-carousel .main-image img {
-    padding: 0 6em;
+    padding: 0 8em;
   }
 
   .main-carousel.lowebot-carousel .main-image img {
-    padding: 0 12em;
+    padding: 0 16em;
   }
 }
 
@@ -581,7 +595,7 @@ iframe {
   }
 
   .main-carousel.lowebot-carousel .main-image img {
-    padding: 0 16em;
+    padding: 0 22em;
   }
 }
 
@@ -591,6 +605,6 @@ iframe {
   }
 
   .main-carousel.lowebot-carousel .main-image img {
-    padding: 0 20em;
+    padding: 0 24em;
   }
 }

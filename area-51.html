@@ -227,45 +227,55 @@
       </div>
     </div>
 
-    <div class="main-carousel">
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-1.jpg" />
+    <div class="main-carousel-wrapper">
+      <div class="main-carousel-arrow prev">
+        <span class="fa fa-chevron-left"></span>
       </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-2.jpg" />
+      <div class="main-carousel-arrow next">
+        <span class="fa fa-chevron-right"></span>
       </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-3.jpg" />
-      </div>
+      <div class="main-carousel">
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-1.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-4.jpg" />
-      </div>
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-2.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-5.jpg" />
-      </div>
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-3.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-6.jpg" />
-      </div>
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-4.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-7.jpg" />
-      </div>
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-5.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-8.jpg" />
-      </div>
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-6.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-9.jpg" />
-      </div>
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-7.jpg" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/area-51-high-fi-10.jpg" />
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-8.jpg" />
+        </div>
+
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-9.jpg" />
+        </div>
+
+        <div class="main-image">
+          <img src="assets/images/area-51-high-fi-10.jpg" />
+        </div>
       </div>
     </div>
 
@@ -382,7 +392,8 @@
     $('.main-carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      prevArrow: '.main-carousel-arrow.prev',
+      nextArrow: '.main-carousel-arrow.next',
       dots: false,
       infinite: true,
       speed: 300,

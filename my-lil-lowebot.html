@@ -214,23 +214,34 @@
       </div>
     </div>
 
-    <div class="main-carousel lowebot-carousel">
-      <div class="main-image">
-        <img src="assets/images/my-lil-lowebot-high-fi-1.png" />
+    <div class="main-carousel-wrapper">
+      <div class="main-carousel-arrow lowebot-arrow prev">
+        <span class="fa fa-chevron-left"></span>
       </div>
 
-      <div class="main-image">
-        <img src="assets/images/my-lil-lowebot-high-fi-2.png" />
+      <div class="main-carousel-arrow lowebot-arrow next">
+        <span class="fa fa-chevron-right"></span>
       </div>
 
-      <div class="main-image">
-        <img src="assets/images/my-lil-lowebot-high-fi-3.png" />
-      </div>
+      <div class="main-carousel lowebot-carousel">
+        <div class="main-image">
+          <img src="assets/images/my-lil-lowebot-high-fi-1.png" />
+        </div>
 
-      <div class="main-image">
-        <img src="assets/images/my-lil-lowebot-high-fi-4.png" />
+        <div class="main-image">
+          <img src="assets/images/my-lil-lowebot-high-fi-2.png" />
+        </div>
+
+        <div class="main-image">
+          <img src="assets/images/my-lil-lowebot-high-fi-3.png" />
+        </div>
+
+        <div class="main-image">
+          <img src="assets/images/my-lil-lowebot-high-fi-4.png" />
+        </div>
       </div>
     </div>
+
   </div>
 
   <div class="section blurb">
@@ -316,8 +327,6 @@
       speed: 300,
       focusOnSelect: true,
       arrows: false,
-      prevArrow: '.carousel-arrow.prev',
-      nextArrow: '.carousel-arrow.next',
       asNavFor: '.main-carousel',
       responsive: [{
         breakpoint: 750,
@@ -331,7 +340,8 @@
     $('.main-carousel').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
+      prevArrow: '.main-carousel-arrow.prev',
+      nextArrow: '.main-carousel-arrow.next',
       dots: false,
       infinite: true,
       speed: 300,

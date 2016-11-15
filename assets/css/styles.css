@@ -272,10 +272,10 @@ header a,
   font-size: 1.3em;
   font-weight: 500;
 }
-.hero-color-wrapper,
+/*.hero-color-wrapper,
 .hero .project-info {
   background-color: rgba(0, 120, 120, 0.75);
-}
+}*/
 .home-harvest .project-info {
   background-color: rgba(50, 150, 120, 0.75);
 }
@@ -502,9 +502,9 @@ iframe {
   .quiz-quarrel .project-info {
     background-color: inherit;
   }
-  .hero:hover .project-info {
+/*  .hero:hover .project-info {
     background-color: rgba(0, 120, 120, 0.75);
-  }
+  }*/
   .home-harvest:hover .project-info {
     background-color: rgba(50, 150, 120, 0.75);
   }
@@ -575,6 +575,7 @@ iframe {
   }
   .main-description .challenge {
     width: 80%;
+    padding-right: 1.5em;
   }
   .main-description .details {
     width: 20%;

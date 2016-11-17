@@ -151,7 +151,7 @@ header a,
 .blurb p {
   margin: 1em 0;
 }
-.blurb img {
+.blurb > img {
   display: block;
   width: 100%;
   margin: -2px 0;
@@ -426,6 +426,10 @@ iframe {
   display: block;
   margin: 0 auto;
 }
+.image-carousel img {
+  height: 600px;
+}
+
 @media (min-width: 40em) {
   body.about-page {
       background-image: url('../images/background-main.jpg');
@@ -555,6 +559,7 @@ iframe {
     padding: 0 12em;
   }
 }
+
 @media (min-width: 50em) {
   .project h1 {
     font-size: 36px;
@@ -569,6 +574,7 @@ iframe {
     flex-basis: 50%;
   }
 }
+
 @media (min-width: 60em) {
   .app {
      padding: 16.2em 0;

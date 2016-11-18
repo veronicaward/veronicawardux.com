@@ -104,8 +104,22 @@ header a,
 .name,
 .description,
 .header-title {
-  text-transform: uppercase;
+  text-transform: uppercasve;
   color: white;
+}
+.circle {
+  border-radius: 100px;
+  border:2px solid #ffffff;
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+.circle:hover {
+  background-color: rgba(133, 220, 217, 1.0);
+  border: 2px solid rgba(133, 220, 217, 1.0);
 }
 .button {
   font-weight: 300;
@@ -428,14 +442,27 @@ iframe {
 }
 .image-carousel img {
   height: 600px;
+  padding: 2em;
 }
-
+/* These styles override the flipster defaults */
+.image-carousel.flipster--coverflow .flipster__item--future .flipster__item__content {
+  transform-origin: 100% 50%;
+  transform: scale(.75) rotateY(-16deg);
+}
+.image-carousel.flipster--coverflow .flipster__item--past .flipster__item__content {
+  transform-origin: 0 50%;
+  transform: scale(.75) rotateY(16deg);
+}
+.flipster__item--past,
+.flipster__item--future {
+  opacity: 0.6;
+}
 @media (min-width: 40em) {
   body.about-page {
-      background-image: url('../images/background-main.jpg');
-      background-size: cover;
-      background-position: center top;
-      background-repeat: no-repeat;
+    background-image: url('../images/background-main.jpg');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
   }
   header {
     position: fixed;

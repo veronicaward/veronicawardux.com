@@ -386,6 +386,14 @@ body.contact-page {
 .infographic-text {
   text-align: center;
 }
+.image-centered {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.image-centered.small {
+  max-width: 600px;
+}
 ul.slick-dots {
   bottom: inherit;
   margin: 1em 0;

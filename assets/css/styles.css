@@ -158,6 +158,9 @@ header a,
 .details p {
   margin-bottom: 0.5em;
 }
+.proto-link {
+  font-weight: bold;
+}
 .blurb {
   text-align: left;
   padding: 2em 2em 3em 2em;
@@ -366,6 +369,22 @@ body.contact-page {
   flex: 1;
   width: 65%;
   padding: 0.5em;
+}
+.infographic-row {
+  display: flex;
+  flex-direction: row;
+}
+.infographic-column {
+  flex-basis: 0;
+  flex-grow: 1;
+  padding: 1.5em;
+}
+.infographic-image {
+  text-align: center;
+  margin: 1.5em auto;
+}
+.infographic-text {
+  text-align: center;
 }
 ul.slick-dots {
   bottom: inherit;

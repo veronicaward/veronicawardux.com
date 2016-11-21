@@ -372,11 +372,9 @@ body.contact-page {
 }
 .infographic-row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .infographic-column {
-  flex-basis: 0;
-  flex-grow: 1;
   padding: 1.5em;
 }
 .infographic-image {
@@ -626,6 +624,13 @@ iframe {
   }
   .image-item {
     flex-basis: 50%;
+  }
+  .infographic-row {
+    flex-direction: row;
+  }
+  .infographic-column {
+    flex-basis: 0;
+    flex-grow: 1;
   }
 }
 

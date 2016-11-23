@@ -381,6 +381,9 @@ body.contact-page {
   text-align: center;
   margin: 1.5em auto;
 }
+.infographic-image.small {
+ max-width: 130px;
+}
 .infographic-text {
   text-align: center;
 }

@@ -421,6 +421,19 @@ body.contact-page {
 .infographic-text {
   text-align: center;
 }
+.infographic-hover {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.infographic-hover:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .image-centered {
   display: block;
   margin: 0 auto;

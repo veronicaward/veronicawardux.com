@@ -43,7 +43,12 @@ h2 {
 p {
   color: rgba(0, 0, 0, 0.75);
   font-weight: 300;
-  line-height: 26px;
+  line-height: 30px;
+}
+.text-align {
+  padding: 0em 7em 2em 7em;
+  text-align: center;
+  line-height: 30px;
 }
 ul {
   list-style-type: disc;
@@ -51,6 +56,7 @@ ul {
 }
 li {
   margin-bottom: .25em;
+  line-height: 30px;
 }
 header {
   padding: 1em;
@@ -304,9 +310,12 @@ header a,
 .re-ally .project-info {
   background-color: rgba(37, 54, 71, 0.75);
 }
-.more-coming .project-info {
-  background-color: rgba(228, 139, 23, 0.75);
+.textile-design .project-info {
+  background-color: rgba(226, 195, 27, 0.85);
 }
+/*.more-coming .project-info {
+  background-color: rgba(228, 139, 23, 0.75);
+}*/
 .text h5 {
   margin-bottom: .5em;
 }
@@ -420,6 +429,7 @@ body.contact-page {
 }
 .infographic-text {
   text-align: center;
+  line-height: 30px;
 }
 .infographic-hover {
   -webkit-transform: perspective(1px) translateZ(0);
@@ -442,6 +452,9 @@ body.contact-page {
 }
 .image-centered.small {
   max-width: 600px;
+}
+.image-centered.medium {
+  max-width: 700px;
 }
 .image-centered img {
   max-width: 100%;
@@ -636,6 +649,9 @@ iframe {
   }
   .more-coming .project-info {
     background-color: rgba(231, 158, 109, 0.75);
+  }
+  .textile-design:hover .project-info {
+    background-color: rgba(226, 195, 27, 0.85);
   }
   .about {
     padding-top: 8em;

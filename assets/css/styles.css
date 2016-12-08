@@ -1,3 +1,7 @@
+/*
+Potential Colors: #DCC48E
+https://coolors.co/329678-253647-284a8d-dc645a-dcc48e
+*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -311,7 +315,7 @@ header a,
   background-color: rgba(37, 54, 71, 0.75);
 }
 .textile-design .project-info {
-  background-color: rgba(226, 195, 27, 0.85);
+  background-color: rgba(220, 196, 142, 0.75);
 }
 /*.more-coming .project-info {
   background-color: rgba(228, 139, 23, 0.75);
@@ -524,6 +528,9 @@ img.no-border {
 .hero-color-wrapper {
   height: 100%;
 }
+.project.main img {
+  max-height: 550px;
+}
 body.contact-page,
 body.about-page {
   height: 100%;
@@ -651,7 +658,7 @@ iframe {
     background-color: rgba(231, 158, 109, 0.75);
   }
   .textile-design:hover .project-info {
-    background-color: rgba(226, 195, 27, 0.85);
+    background-color: rgba(220, 196, 142, 0.75);
   }
   .about {
     padding-top: 8em;

@@ -315,7 +315,7 @@ header a,
   background-color: rgba(37, 54, 71, 0.75);
 }
 .textile-design .project-info {
-  background-color: rgba(220, 196, 142, 0.75);
+  background-color: rgba(87, 16, 64, 0.75);
 }
 /*.more-coming .project-info {
   background-color: rgba(228, 139, 23, 0.75);
@@ -658,7 +658,7 @@ iframe {
     background-color: rgba(231, 158, 109, 0.75);
   }
   .textile-design:hover .project-info {
-    background-color: rgba(220, 196, 142, 0.75);
+    background-color: rgba(87, 16, 64, 0.75);
   }
   .about {
     padding-top: 8em;

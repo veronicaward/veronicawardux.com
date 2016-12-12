@@ -50,7 +50,6 @@ p {
   line-height: 30px;
 }
 .text-align {
-  padding: 0em 7em 2em 7em;
   text-align: center;
   line-height: 30px;
 }
@@ -189,8 +188,6 @@ header a,
 .blurb .title {
   display: block;
   text-align: center;
-  overflow: hidden;
-  white-space: nowrap;
   margin-bottom: 2em;
 }
 .blurb .title > span {
@@ -205,23 +202,6 @@ header a,
 }
 .details p {
   margin-top: 0em;
-}
-.blurb .title > span:before,
-.blurb .title > span:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 9999px;
-  height: 2px;
-  background: rgba(0, 0, 0, 0.06);
-}
-.blurb .title > span:before {
-  right: 100%;
-  margin-right: 30px;
-}
-.blurb .title > span:after {
-  left: 100%;
-  margin-left: 30px;
 }
 .blurb .project {
   margin: .5em;
@@ -556,6 +536,32 @@ iframe {
 .flipster__item--future {
   opacity: 0.6;
 }
+@media (min-width: 30em) {
+  .blurb .title {
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-bottom: 2em;
+  }
+  .blurb .title > span:before,
+  .blurb .title > span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 9999px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.06);
+  }
+  .blurb .title > span:before {
+    right: 100%;
+    margin-right: 30px;
+  }
+  .blurb .title > span:after {
+    left: 100%;
+    margin-left: 30px;
+  }
+}
 @media (min-width: 40em) {
   body.about-page {
     background-image: url('../images/background-main.jpg');
@@ -693,6 +699,9 @@ iframe {
   }
   .main-carousel.lowebot-carousel .main-image img {
     padding: 0 12em;
+  }
+  .text-align {
+    padding: 0em 7em 2em 7em;
   }
 }
 

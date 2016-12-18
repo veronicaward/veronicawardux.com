@@ -238,6 +238,19 @@
       <li>Troubleshooting tips</li>
       <li>Cooking suggestions</li>
     </ul>
+
+ <!--    <div class="image-carousel">
+      <ul>
+        <li><img src="assets/images/hh-high fi-1.png" /></li>
+        <li><img src="assets/images/hh-high fi-2.png" /></li>
+        <li><img src="assets/images/hh-high fi-3.png" /></li>
+        <li><img src="assets/images/hh-high fi-4.png" /></li>
+        <li><img src="assets/images/hh-high fi-5.png" /></li>
+        <li><img src="assets/images/hh-high fi-6.png" /></li>
+        <li><img src="assets/images/hh-high fi-7.png" /></li>
+        <li><img src="assets/images/hh-high fi-8.png" /></li>
+      </ul>
+    </div> -->
   </div>
 
   <div class="section blurb">
@@ -318,6 +331,19 @@
     </div>
   </div>
 
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="assets/js/jquery.flipster.min.js"></script>
+
+  <script>
+    $('.image-carousel').flipster({
+      scrollwheel: false,
+      buttons: true,
+      spacing: -0.6,
+      loop: true,
+      start: 0
+    });
+  </script>
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -326,6 +352,5 @@
 
     ga('create', 'UA-87206603-1', 'auto');
     ga('send', 'pageview');
-
-  </script>  
+  </script>
 </body>

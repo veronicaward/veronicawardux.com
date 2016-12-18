@@ -53,6 +53,9 @@ p {
   text-align: center;
   line-height: 30px;
 }
+.list-align {
+  line-height: 30px;
+}
 ul {
   list-style-type: disc;
   margin-left: 1em;
@@ -700,6 +703,8 @@ iframe {
   .main-carousel.lowebot-carousel .main-image img {
     padding: 0 12em;
   }
+
+  .list-align,
   .text-align {
     padding: 0em 7em 2em 7em;
   }

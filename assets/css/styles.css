@@ -300,6 +300,10 @@ header a,
 .textile-design .project-info {
   background-color: rgba(87, 16, 64, 0.75);
 }
+}
+.orca .project-info {
+  background-color: rgba(21, 75, 128, 0.75);
+}
 /*.more-coming .project-info {
   background-color: rgba(228, 139, 23, 0.75);
 }*/
@@ -672,6 +676,9 @@ iframe {
   }
   .textile-design:hover .project-info {
     background-color: rgba(87, 16, 64, 0.75);
+  }
+  .orca:hover .project-info {
+    background-color: rgba(21, 75, 128, 0.75);
   }
   .about {
     padding-top: 8em;

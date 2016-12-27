@@ -14,6 +14,7 @@
   <title>Veronica Ward UX</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/jquery.flipster.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
 </head>
@@ -98,7 +99,7 @@
     </div>
 
     <div class="image-centered small">
-     <img src="assets/images/home-harvest-weather.jpg" />
+     <img src="assets/images/home-harvest-weather.jpg" data-aos="zoom-in" data-aos-duration="1000"/>
     </div>
   </div>
 
@@ -108,7 +109,7 @@
     </div>
 
     <div class="infographic-row">
-      <div class="infographic-column">
+      <div class="infographic-column" data-aos="zoom-in" data-aos-duration="1000">
         <div class="infographic-image small infographic-hover">
           <img src="assets/images/hh-graphic-1.svg" />
         </div>
@@ -118,7 +119,7 @@
         </div>
       </div>
       
-      <div class="infographic-column">
+      <div class="infographic-column" data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1000">
         <div class="infographic-image small infographic-hover">
           <img src="assets/images/hh-graphic-2.svg" />
         </div>
@@ -128,7 +129,7 @@
         </div>
       </div>
 
-      <div class="infographic-column">
+      <div class="infographic-column" data-aos-delay="400" data-aos="zoom-in" data-aos-duration="1000">
         <div class="infographic-image small infographic-hover">
           <img src="assets/images/hh-graphic-3.svg" />
         </div>
@@ -151,11 +152,11 @@
 
     <div class="image-row">
       <div class="image-item">
-        <img src="assets/images/hh-persona-1.jpg" />
+        <img src="assets/images/hh-persona-1.jpg" data-aos="fade-right" data-aos-duration="1000"/>
       </div>
 
       <div class="image-item">
-        <img src="assets/images/hh-persona-2.jpg" />
+        <img src="assets/images/hh-persona-2.jpg" data-aos="fade-left" data-aos-duration="1000"/>
       </div>
     </div>
 
@@ -194,11 +195,11 @@
 
     <div class="image-row">
       <div class="image-item">
-        <img src="assets/images/hh-paper-proto-1.png" />
+        <img src="assets/images/hh-paper-proto-1.png" data-aos="fade-right" data-aos-duration="1000"/>
       </div>
 
       <div class="image-item">
-        <img src="assets/images/hh-paper-proto-2.png" />
+        <img src="assets/images/hh-paper-proto-2.png" data-aos="fade-left" data-aos-duration="1000"/>
       </div>
     </div>
   </div>
@@ -215,7 +216,7 @@
       research and edited the design again to reflect this new found knowledge.
     </div>
 
-    <img src="assets/images/user-testing.jpg" />
+    <img src="assets/images/user-testing.jpg" data-aos="zoom-in" data-aos-duration="1000"/>
   </div>
 
   <div class="section blurb">
@@ -341,6 +342,11 @@
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="assets/js/jquery.flipster.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <script>
     $('.image-carousel').flipster({

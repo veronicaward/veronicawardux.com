@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/jquery.flipster.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
@@ -106,7 +107,7 @@
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/orca-before-1.png" />
+      <img src="assets/images/orca-before-1.png" data-aos="zoom-in" data-aos-duration="1000"/>
     </div>
   </div>
 
@@ -120,7 +121,7 @@
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/orca-content audit.png" />
+      <img src="assets/images/orca-content audit.png" data-aos="zoom-in" data-aos-duration="1000"/>
     </div>
   </div>
 
@@ -134,11 +135,11 @@
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/orca-user-quote-1.png" />
+      <img src="assets/images/orca-user-quote-1.png" data-aos="fade-right" data-aos-duration="1000"/>
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/orca-user-quote-2.png" />
+      <img src="assets/images/orca-user-quote-2.png" data-aos="fade-left" data-aos-duration="1000"/>
     </div>
   </div>
 
@@ -148,7 +149,7 @@
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/orca-high-fi-1.png" />
+      <img src="assets/images/orca-high-fi-1.png" data-aos="zoom-in" data-aos-duration="1000"/>
     </div>
 
   </div>
@@ -226,6 +227,11 @@
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="assets/js/jquery.flipster.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <script>
     $('.image-carousel').flipster({

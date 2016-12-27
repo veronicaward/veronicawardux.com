@@ -17,6 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/jquery.flipster.min.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/aos.css" />
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 
@@ -104,11 +105,11 @@
 
     <div class="website-logos">
       <div class="website-logo">
-        <img src="assets/images/quiz-quarrel-josh.jpg" />
+        <img src="assets/images/quiz-quarrel-josh.jpg" data-aos="fade-right" data-aos-duration="1000"/>
       </div>
 
       <div class="website-logo">
-        <img src="assets/images/quiz-quarrel-alan.jpg" />
+        <img src="assets/images/quiz-quarrel-alan.jpg" data-aos="fade-left" data-aos-duration="1000"/>
       </div>
     </div>
 
@@ -132,11 +133,11 @@
 
    <div class="image-row">
       <div class="image-item shadow">
-        <img src="assets/images/quiz-quarrel-high-fi-1.png" />
+        <img src="assets/images/quiz-quarrel-high-fi-1.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
 
       <div class="image-item shadow">
-        <img src="assets/images/quiz-quarrel-high-fi-2.png" />
+        <img src="assets/images/quiz-quarrel-high-fi-2.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
     </div>
 
@@ -149,11 +150,11 @@
 
    <div class="image-row">
       <div class="image-item shadow">
-        <img src="assets/images/quiz-quarrel-high-fi-3.png" />
+        <img src="assets/images/quiz-quarrel-high-fi-3.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
 
       <div class="image-item shadow">
-        <img src="assets/images/quiz-quarrel-high-fi-4.png" />
+        <img src="assets/images/quiz-quarrel-high-fi-4.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
     </div>
 
@@ -166,11 +167,11 @@
 
     <div class="image-row">
       <div class="image-item shadow">
-        <img src="assets/images/quiz-quarrel-high-fi-5.png" />
+        <img src="assets/images/quiz-quarrel-high-fi-5.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
 
       <div class="image-item shadow">
-        <img src="assets/images/quiz-quarrel-high-fi-6.png" />
+        <img src="assets/images/quiz-quarrel-high-fi-6.png" data-aos="zoom-in" data-aos-duration="1000"/>
       </div>
     </div>
 
@@ -186,11 +187,11 @@
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/quiz-quarrel-style-guide.png" />
+      <img src="assets/images/quiz-quarrel-style-guide.png" data-aos="zoom-in" data-aos-duration="1000"/>
     </div>
 
     <div class="image-centered shadow">
-      <img src="assets/images/quiz-quarrel-redline.png" />
+      <img src="assets/images/quiz-quarrel-redline.png" data-aos="zoom-in" data-aos-duration="1000"/>
     </div>
   </div>  
 
@@ -249,6 +250,7 @@
 
   <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="assets/js/jquery.flipster.min.js"></script>
+  <script src="assets/js/aos.js"></script>
 
   <script>
     $('.image-carousel').flipster({
@@ -268,5 +270,9 @@
 
     ga('create', 'UA-87206603-1', 'auto');
     ga('send', 'pageview');
+  </script>
+
+  <script>
+    AOS.init();
   </script>
 </body>

@@ -116,7 +116,7 @@ header a,
 .name,
 .description,
 .header-title {
-  text-transform: uppercasve;
+  text-transform: uppercase;
   color: white;
 }
 .circle {
@@ -163,8 +163,19 @@ header a,
 }
 .main-image {
   padding: 0;
+  position: relative;
 }
 .main-image img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+.main-titles {
+  position: absolute;
+  padding: 0em 5em;
+  top: 125px;
+  color: white;
+  text-align: center;
   width: 100%;
 }
 .details p {

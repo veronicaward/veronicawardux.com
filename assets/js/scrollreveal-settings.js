@@ -1,11 +1,13 @@
 var sr = ScrollReveal();
 
 sr.reveal('.zoom-in', {
+  mobile: false,
   duration: 1000,
   reset: true
 });
 
 sr.reveal('.fade-ltr', {
+  mobile: false,
   duration: 1000,
   reset: true,
   origin: 'left',
@@ -14,6 +16,7 @@ sr.reveal('.fade-ltr', {
 });
 
 sr.reveal('.fade-rtl', {
+  mobile: false,
   duration: 1000,
   reset: true,
   origin: 'right',

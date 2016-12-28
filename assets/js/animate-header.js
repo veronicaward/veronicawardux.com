@@ -9,10 +9,10 @@
       var bb = mainImage[0].getBoundingClientRect();
 
       if (bb.bottom >= 0) {
-        var percentScrolled = 1 - Math.abs(bb.top / (bb.bottom - bb.top));
+        var percentScrolled = .75 - Math.abs(bb.top / (bb.bottom - bb.top));
         mainTitles.css('opacity', percentScrolled);
         if (bb.top < 0) {
-          var translate = 'translate3d(0px, ' + (-bb.top / 1.5) +  'px, 0px)';
+          var translate = 'translate3d(0px, ' + (-bb.top / 3) +  'px, 0px)';
           mainTitles.css('transform', translate);
         }
       } else {

@@ -1,24 +1,31 @@
 (function () {
-  //style="transform: translate3d(0px, 30.015px, 0px); opacity: 0.835082;"
-
-  $().ready(function () {
+  function initAnimateHeader() {
     var mainImage = $('.main-image');
     var mainTitles = $('.main-titles');
 
     $(window).scroll(function () {
       var bb = mainImage[0].getBoundingClientRect();
+      var percentScrolled = 1.0;
+      var translatePx = Math.floor(-bb.top / 3);
+      var translate = 'translate3d(0px, ' + translatePx +  'px, 0px)';
+
+      if (translatePx > 0) {
+        percentScrolled = .75 - Math.abs(bb.top / (bb.bottom - bb.top));
+      }
 
       if (bb.bottom >= 0) {
-        var percentScrolled = .75 - Math.abs(bb.top / (bb.bottom - bb.top));
         mainTitles.css('opacity', percentScrolled);
+
         if (bb.top < 0) {
-          var translate = 'translate3d(0px, ' + (-bb.top / 3) +  'px, 0px)';
           mainTitles.css('transform', translate);
         }
-      } else {
-        var offset = Math.abs(bb.top) / 4;
-        console.log('Cannot see header, do not animate');
       }
     });
+  }
+
+  $().ready(function () {
+    if ($(window).width() > 700) {
+      initAnimateHeader();
+    }
   });
 })();

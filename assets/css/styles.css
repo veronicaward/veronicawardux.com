@@ -173,17 +173,18 @@ header a,
 }
 .main-titles {
   position: absolute;
-  top: 300px;
+  top: 50%;
+  transform: translate(0, -50%);
   font-size: 2em;
   text-align: left;
   color: white;
   width: 100%;
-  padding: 0em 2.5em;
+  padding: 0 1.5em;
 }
 h1.main-title,
 h5.main-subtitle {
   text-shadow: 1px 1px 8px #666;
-  text-align: left;
+  text-align: center;
   margin: 0;
 }
 h1.main-title {
@@ -418,18 +419,12 @@ body.contact-page {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 0 5em;
-}
-.website-logo {
-  flex-basis: 0;
-  flex-grow: 1;
-  padding: 1em;
+  padding: 0 2em;
 }
 .website-logo img {
-  max-width: 260px;
-  width: 100%;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
+  width: 100%;
 }
 .infographic-row {
   display: flex;
@@ -653,6 +648,15 @@ iframe {
     background-color: rgba(133, 220, 217, 1.0);
     border: 2px solid rgba(133, 220, 217, 1.0);
   }
+  .main-titles {
+    top: 300px;
+    text-align: center;
+    padding: 0em 2.5em;
+  }
+  h1.main-title,
+  h5.main-subtitle {
+    text-align: left;
+  }
   .image-item-4 {
     flex-basis: 50%;
   }
@@ -764,6 +768,20 @@ iframe {
   .website-logos,
   .infographic-row {
     flex-direction: row;
+  }
+  .website-logos {
+    padding: 0 5em;
+  }
+  .website-logo {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 1em;
+  }
+  .website-logo img {
+    max-width: 260px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
   .infographic-column {
     flex-basis: 0;

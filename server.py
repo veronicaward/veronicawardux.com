@@ -7,5 +7,5 @@ Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
 
 httpd = SocketServer.TCPServer(("", PORT), Handler)
 
-print "serving at port", PORT
+print "Serving at http://localhost:{}/".format(PORT), PORT
 httpd.serve_forever()
